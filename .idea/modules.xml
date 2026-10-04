@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaFX_Zadania.iml" filepath="$PROJECT_DIR$/.idea/JavaFX_Zadania.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Seminar2_Zadanie2_BMI/Seminar2_Zadanie2_BMI.iml" filepath="$PROJECT_DIR$/Seminar2_Zadanie2_BMI/Seminar2_Zadanie2_BMI.iml" />
     </modules>
   </component>
 </project>
