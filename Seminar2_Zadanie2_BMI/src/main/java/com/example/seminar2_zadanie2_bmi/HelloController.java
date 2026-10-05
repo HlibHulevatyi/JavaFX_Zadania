@@ -34,6 +34,11 @@ public class HelloController {
             } else {
                 kategoria = "obezita";
             }
+
+            double zaokruhleneBmi = Math.round(bmi * 100.0) / 100.0;
+
+            resultLabel.setText("BMI: " + zaokruhleneBmi + " - " + kategoria);
+
         } catch (NumberFormatException e) {
             resultLabel.setText("Chyba: Zadajte prosim platne cisla.");
         }
