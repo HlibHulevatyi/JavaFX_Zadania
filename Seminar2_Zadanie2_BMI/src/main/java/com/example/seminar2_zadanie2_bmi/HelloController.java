@@ -18,6 +18,24 @@ public class HelloController {
 
     @FXML
     public void onCalculateButtonClick(ActionEvent event) {
+        try {
+            double hmotnost = Double.parseDouble(weightInput.getText().replace(",", "."));
+            double vyskaCm = Double.parseDouble(heightInput.getText().replace(",", "."));
+            double vyskaM = vyskaCm / 100.0;
+            double bmi = hmotnost / (vyskaM * vyskaM);
 
+            String kategoria;
+            if (bmi < 18.5) {
+                kategoria = "podvaha";
+            } else if (bmi < 25) {
+                kategoria = "normalna hmotnost";
+            } else if (bmi < 30) {
+                kategoria = "nadvaha";
+            } else {
+                kategoria = "obezita";
+            }
+        } catch (NumberFormatException e) {
+            resultLabel.setText("Chyba: Zadajte prosim platne cisla.");
+        }
     }
 }
